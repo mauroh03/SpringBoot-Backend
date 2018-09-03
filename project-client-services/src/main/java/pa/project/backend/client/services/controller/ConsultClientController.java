@@ -21,7 +21,7 @@ public class ConsultClientController {
 	private static final Logger LOGGER = LoggerFactory.getLogger(ConsultClientController.class);
 
 	@RequestMapping(value = "/consultClient/", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<ConsultClientResponse> onConsultClientMethodPost(@RequestBody ConsultClientRequest consultClientRequest) {
+	public ResponseEntity<ConsultClientResponse> consultClientMethodPost(@RequestBody ConsultClientRequest consultClientRequest) {
 		ConsultClientResponse consultClientResponse = new ConsultClientResponse();
 		
 		consultClientResponse.setClient(consultClientRequest.getName()+" "+consultClientRequest.getLastName());
