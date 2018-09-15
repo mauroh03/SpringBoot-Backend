@@ -12,7 +12,7 @@ I also use anothers open source projects to make this backedn work properly:
 * [spring tool suite] - best IDE for spring projects
 
 ### How to start
-* i hope you have JAVA installed if don't. [install JAVA]
+* i hope you have JAVA installed if you don't. [install JAVA]
 * [install maven]
 
 **just run:**
