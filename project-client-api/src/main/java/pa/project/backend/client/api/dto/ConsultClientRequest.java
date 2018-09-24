@@ -2,23 +2,18 @@ package pa.project.backend.client.api.dto;
 
 public class ConsultClientRequest {
 
-	private String name;
-	private String lastName;
-	
-	public String getName() {
-		return name;
+	private String key;
+
+	public String getKey() {
+		return key;
 	}
-	public void setName(String name) {
-		this.name = name;
+
+	public void setKey(String key) {
+		this.key = key;
 	}
-	public String getLastName() {
-		return lastName;
-	}
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
+
 	@Override
 	public String toString() {
-		return "ConsultClientRequest [name=" + name + ", lastName=" + lastName + "]";
+		return "ConsultClientRequest [key=" + key + "]";
 	}
 }
