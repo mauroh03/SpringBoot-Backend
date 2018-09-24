@@ -15,7 +15,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @Configuration
 public class SwaggerConfig {
 
-	@Value("${bg.endpoint.base}")
+	@Value("${project.base.endpoint}")
     private String apiBaseUrl;
 	
     private static final String HTTPURL= "https://github.com/mauroh03";

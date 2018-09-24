@@ -1,17 +1,31 @@
 package pa.project.backend.client.api.dto;
 
-public class ConsultClientResponse {
-	
-	private String client;
+import java.util.ArrayList;
+import java.util.List;
 
-	public String getClient() {
-		return client;
+public class ConsultClientResponse {
+
+	private List<Client> clientList = new ArrayList<>();
+	private Boolean response;
+
+	public List<Client> getClientList() {
+		return clientList;
 	}
-	public void setClient(String client) {
-		this.client = client;
+
+	public void setClientList(List<Client> clientList) {
+		this.clientList = clientList;
 	}
+
+	public Boolean getResponse() {
+		return response;
+	}
+
+	public void setResponse(Boolean response) {
+		this.response = response;
+	}
+
 	@Override
 	public String toString() {
-		return "ConsultClientResponse [client=" + client + "]";
+		return "ConsultClientResponse [clientList=" + clientList + ", response=" + response + "]";
 	}
 }
